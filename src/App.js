@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import sedan from "./images/icon-sedans.svg";
+import suv from "./images/icon-suvs.svg";
+import luxury from "./images/icon-luxury.svg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <cards
+        name="SEDANS"
+        body="Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip."
+      />
     </div>
   );
 }

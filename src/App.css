@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -13,8 +14,9 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.sedan,
+.suv,
+.luxury {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,9 +25,17 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+div .sedan {
+  background-color: #e28525;
+}
+div .suv {
+  background-color: #016972;
+}
+div .luxury {
+  background-color: #00403f;
+}
 .App-link {
-  color: #61dafb;
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
