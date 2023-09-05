@@ -1,13 +1,14 @@
 import React from "react";
 
-const cards = (props) => {
+const Cards = (props) => {
   return (
-    <div>
-      <img src="props.imgicon" alt="icons" />
-      <h3> {props.name} </h3>
-      <p> {props.body} </p>
+    <div className={`container ${props.color}`}>
+      <img src={props.imgicons} alt="icons" />
+      <h3>{props.name}</h3>
+      <p>{props.body} </p>
+      <button className="but">{props.link}</button>
     </div>
   );
 };
 
-export default cards;
+export default Cards;
